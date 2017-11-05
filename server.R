@@ -2,7 +2,7 @@ library(quantmod)
 GSPC <- getSymbols("^GSPC", src="yahoo", from="2017-10-1", to="2017-11-03", periodicity="daily", auto.assign=FALSE)
 spy_df <- as.data.frame(GSPC)
 colnames(spy_df) <-c("open", "high", "low", "close", "volume", "adjusted")
-  
+
 #当日の日付をとるコード
 
 
